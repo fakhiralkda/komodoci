@@ -11,6 +11,6 @@ steps:
     SF_PASS:
       from_secret: SF_PASS
   commands:
-  - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
+  - sudo wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
   - chmod +x kmd.sh
   - bash kmd.sh
