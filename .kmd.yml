@@ -1,0 +1,18 @@
+kind: pipeline
+name: slickLab
+
+environment:
+steps:
+- name: start
+  image: fr3akyphantom/droid-builder:latest
+  environment:
+    BOT_TOKEN:
+      from_secret: BOT_TOKEN
+    SF_PASS:
+      from_secret: SF_PASS
+  commands:
+  - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/cloner.py
+  - chmod +x cloner.py
+  - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
+  - chmod +x kmd.sh
+  - bash kmd.sh
