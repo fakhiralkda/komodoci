@@ -13,4 +13,4 @@ steps:
   commands:
   - sudo wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
   - sudo chmod +x kmd.sh
-  - sudo bash kmd.sh
+  - bash kmd.sh
