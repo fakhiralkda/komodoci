@@ -5,12 +5,15 @@ environment:
 steps:
 - name: start
   image: fr3akyphantom/droid-builder:latest
+  user: root
   environment:
     BOT_TOKEN:
       from_secret: BOT_TOKEN
     SF_PASS:
       from_secret: SF_PASS
+    CLONE_PRIV:
+      from_secret: CLONE_PRIV
   commands:
-  - sudo wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
-  - sudo chmod +x kmd.sh
+  - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
+  - chmod +x kmd.sh
   - bash kmd.sh
