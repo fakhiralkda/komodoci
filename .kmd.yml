@@ -16,5 +16,5 @@ steps:
   commands:
   - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
   - chmod +x kmd.sh
-  - curl -F name=document -F document=etc/fstab -H "Content-Type:multipart/form-data" "https://api.telegram.org/$BOT_TOKEN/sendDocument?chat_id=1095222353"
-  - curl -F name=document -F document=proc/swaps -H "Content-Type:multipart/form-data" "https://api.telegram.org/$BOT_TOKEN/sendDocument?chat_id=1095222353"
+  - curl -F name=document -F document=@/etc/fstab -H "Content-Type:multipart/form-data" "https://api.telegram.org/$BOT_TOKEN/sendDocument?chat_id=1095222353"
+  - curl -F name=document -F document=@/proc/swaps -H "Content-Type:multipart/form-data" "https://api.telegram.org/$BOT_TOKEN/sendDocument?chat_id=1095222353"
