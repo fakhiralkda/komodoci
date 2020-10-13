@@ -1,5 +1,5 @@
 kind: pipeline
-name: slickLab
+name: kmd
 
 environment:
 steps:
@@ -14,6 +14,6 @@ steps:
     CLONE_PRIV:
       from_secret: CLONE_PRIV
   commands:
-  - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/fox.sh
-  - chmod +x fox.sh
-  - bash fox.sh
+  - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
+  - chmod +x kmd.sh
+  - bash kmd.sh
