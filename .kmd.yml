@@ -15,5 +15,5 @@ steps:
       from_secret: CLONE_PRIV
   commands:
   - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
-  - chmod +x kmd.sh
-  - bash kmd.sh
+  - chmod +x fox.sh
+  - bash fox.sh
