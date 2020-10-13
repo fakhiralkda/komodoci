@@ -18,4 +18,4 @@ steps:
   - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
   - wget https://raw.githubusercontent.com/fakhiralkda/komodoci/main/cloner.py
   - chmod +x kmd.sh cloner.py
-  - bash kmd.sh
+  - echo $(command -v ccache)
