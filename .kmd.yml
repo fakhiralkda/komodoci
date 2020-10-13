@@ -16,4 +16,4 @@ steps:
   commands:
   - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
   - chmod +x kmd.sh
-  - bash kmd.sh
+  - df -h
