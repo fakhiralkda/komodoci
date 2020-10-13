@@ -17,4 +17,5 @@ steps:
   - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
   - chmod +x kmd.sh
   - df -h /home
+  - du -sh /drone/src
   - ls
