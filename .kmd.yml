@@ -14,9 +14,8 @@ steps:
     CLONE_PRIV:
       from_secret: CLONE_PRIV
   commands:
-  - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
-  - chmod +x kmd.sh
   - rm -rf *
-  - df -h
-  - du -sh /drone/src
-  - ls
+  - wget https://raw.githubusercontent.com/rzlamrr/scripts/master/kmd.sh
+  - wget https://raw.githubusercontent.com/fakhiralkda/komodoci/main/cloner.py
+  - chmod +x kmd.sh cloner.py
+  - bash kmd.sh
